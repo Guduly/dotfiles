@@ -44,3 +44,6 @@ vim.keymap.set("n", "<C-x>", run_file, { desc = "Compiling & Running..." })
 
 -- delete terminal buffer
 vim.keymap.set("n", "<C-q>", closeTerminals, { desc = "Closing all Terminals..." })
+
+--remap delete without overwrite
+vim.keymap.set({ "n", "x" }, "d", '"_d')
