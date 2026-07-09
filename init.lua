@@ -89,3 +89,6 @@ end
 for _, key in ipairs(numpad_keys) do
   vim.keymap.set({ "n", "i", "v" }, key, "<Nop>", { silent = true })
 end
+
+-- nvim reload keybind
+vim.keymap.set("n", "<leader>r", ":source ~/.config/nvim/init.lua<CR>", { desc = "Reload init.lua" })
